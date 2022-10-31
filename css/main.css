@@ -12,6 +12,9 @@ body {
     height: 100vh;
     background: url(../img/img1.jpg) center center no-repeat;
     background-size: cover;
+    font-family:monospace;
+    font-size: 1.1rem;
+    font-weight: normal;
 }
 
 body::before {
@@ -39,7 +42,7 @@ tbody {
 
 table {
     margin-top: 10rem;
-    width: 900px;
+    width: 950px;
     height: 100px;
     text-align: center;
 }
