@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="css/main.css" rel="stylesheet">
     <title>Registros</title>
 </head>
@@ -55,7 +56,6 @@
                     return "<td>". $var ."</td>";
                 }
             
-            
                if(isset($_GET["Cargo"]) and isset($_GET["Area"])) {
             
                     $cargo = $_GET["Cargo"];
@@ -85,9 +85,8 @@
                             echo Wtd($exibir['Area']);
                             echo Wtd($exibir['Salario']);
                             echo Wtd($exibir['eStatus']);
-                            echo Wtd("Excluir");
-                            echo Wtd("Alterar");
-                        
+                            echo Wtd("<i class='fa fa-remove'></i>");
+                            echo Wtd("<i class='fa fa-pencil'></i>");
                         echo "</tr>";
                         
                     }
