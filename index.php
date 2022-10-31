@@ -94,7 +94,7 @@
             
             
                else {
-                    return null;
+                    return  error_log("F");
                }
            
            
