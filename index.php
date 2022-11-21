@@ -49,11 +49,10 @@
                     
         <table class="table">
                     
-                    
             <?php
     
-                function Wtd($var) {
-                    return "<td>". $var ."</td>";
+                function Wtd($column) {
+                    return "<td>". $column ."</td>";
                 }
             
                if(isset($_GET["Cargo"]) and isset($_GET["Area"])) {
@@ -78,15 +77,14 @@
                     while ($exibir = $consulta->fetch(PDO::FETCH_ASSOC)) {
                     
                         echo "<tr>";
-                        
                             echo Wtd($exibir['Registro']);
                             echo Wtd($exibir['Nome']);
                             echo Wtd($exibir['Cargo']);
                             echo Wtd($exibir['Area']);
                             echo Wtd($exibir['Salario']);
-                            echo Wtd($exibir['eStatus']);
-                            echo Wtd("<i class='fa fa-remove'></i>");
-                            echo Wtd("<i class='fa fa-pencil'></i>");
+                            echo Wtd($exibir['StatusUsuario']);
+                            echo Wtd("<a href='delete.php ? cd_excluir=$exibir[Registro]'><i class='fa fa-remove'></i></a>");
+                            echo Wtd("<a href='alterar.php ? cd_alterar=$exibir[Registro]'><i class='fa fa-pencil'></i</a>");
                         echo "</tr>";
                         
                     }
