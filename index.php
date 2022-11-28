@@ -82,7 +82,7 @@
                             echo Wtd($exibir['Cargo']);
                             echo Wtd($exibir['Area']);
                             echo Wtd($exibir['Salario']);
-                            echo Wtd($exibir['eStatus']); // StatusUsuario
+                            echo Wtd($exibir['StatusUsuario']);
                             echo Wtd("<a href='delete.php ? cd_excluir=$exibir[Registro]'><i class='fa fa-remove'></i></a>");
                             echo Wtd("<a href='alterar.php ? cd_alterar=$exibir[Registro]'><i class='fa fa-pencil'></i</a>");
                         echo "</tr>";
@@ -92,7 +92,7 @@
             
             
                else {
-                    return  error_log("No operational");
+                    return  error_log("F");
                }
            
            
